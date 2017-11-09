@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/mern-starter
     docker:
-      - image: circleci/node:latest
+      - image: circleci/node:4.8.2
       - image: mongo:3.4.4
     steps:
       - checkout
@@ -15,9 +15,6 @@ jobs:
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
-      - run:
-          name: update-semver
-          command: npm install -g semver
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
