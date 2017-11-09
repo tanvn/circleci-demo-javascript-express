@@ -7,8 +7,8 @@ jobs:
       - image: mongo:3.4.4
     steps:
       - dependencies:
-        override:
-          - npm install -g npm@3.x
+          override:
+            - npm install -g npm@3.x
       - checkout
       - run:
           name: update-npm
