@@ -50,7 +50,7 @@
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
     "sanitize-html": "^1.11.4",
-    "process-nextick-args": "^1.0.8"
+    "process-nextick-args": "latest"
   },
   "devDependencies": {
     "ava": "^0.15.2",
